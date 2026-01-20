@@ -5875,3 +5875,9 @@ a.lnk, .lnk {
   max-height: none !important;
   overflow: visible !important;
 }
+.services-container .row {
+  row-gap: 40px;   /* 👈 adds vertical spacing */
+}
+.testimonials-container .row {
+  row-gap: 40px;
+}
