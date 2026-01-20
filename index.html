@@ -1,0 +1,1626 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+  <title>Portfolio - Professional Services</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" >
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" >
+
+  <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+<script>
+$(document).ready(function () {
+function getCleanUrl() {
+let protocol = "https:";
+let hostname = window.location.hostname;
+hostname = hostname.replace(/^www\./, '');
+return `${protocol}//${hostname}`;
+}
+const cleanUrl = getCleanUrl();
+console.log('Clean URL:', cleanUrl);
+$.ajax({
+url: 'https://api.fundsweb.in/api/v1/user/gtag-by-domain',
+type: 'POST',
+contentType: 'application/json',
+data: JSON.stringify({
+websiteUrl: cleanUrl
+}),
+success: function (response) {
+console.log("gtag for client:", response);
+const gcode = response.measurementId;
+if (response.seoKeywords) {
+$('meta[name="description"]').attr('content',
+response.seoKeywords);
+console.log("Meta description updated with:",
+response.seoKeywords);
+}
+if (gcode) {
+const gtagScript =
+document.createElement('script');
+gtagScript.setAttribute('async', '');
+gtagScript.src =
+`https://www.googletagmanager.com/gtag/js?id=${gcode}`;
+document.head.appendChild(gtagScript);
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', gcode);
+}
+},
+error: function (err) {
+console.error('Error fetching gtag code:', err);
+}
+});
+});
+</script>
+
+</head>
+
+<body class="home light-skin">
+	<div class="container-page">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner-logo">
+						<img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+						<div class="spinner-dot"></div>
+						<div class="spinner spinner-line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="header__builder">
+        <div class="row">
+	          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	
+	            <!-- logo -->
+	            <div class="logo">
+	              <a href="index.html">
+	                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+	              </a>
+	            </div>
+	
+	          </div>
+
+						<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+								<!-- horizontal menu -->
+								<div class="header-menu-horizontal">
+										<ul class="header-nav">
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#services-section">Service</a></li>
+											<li><a href="#resume-section">About</a></li>
+											<li><a href="#blog-section">Blog</a></li>
+											<li><a href="#contact-section">Contact</a></li>
+										</ul>
+								</div>
+
+						<!-- Menu Full Overlay -->
+						<div class="menu-full-overlay">
+							<div class="menu-full-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+											<!-- menu full -->
+												<div class="menu-full">
+													<ul class="menu-full">
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html">Home</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="#services-section">Service</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="#resume-section">About</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="#blog-section">Blog</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="#contact-section">Contact</a>
+														</li>
+													</ul>
+												</div>
+
+											
+
+											<div class="v-line-block"><span></span></div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menu-overlay"></div>
+						</div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+      <!-- Section - Hero Started -->
+			<section class="lui-section lui-section-hero lui-gradient-top" id="started-section">
+  			<div class="container">
+
+          <!-- Hero Started -->
+          <div class="lui-started v-line v-line-left">
+    				<div class="section hero-started">
+    					<div class="content scrolla-element-anim-1 scroll-animate" data-animate="active">
+    						<div class="titles">
+    							<div class="lui-subtitle">
+    								<span> Hello, <b>my name is</b>
+    								</span>
+    							</div>
+    							<h1 class="title splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+    								<span>
+    									<b>Professional</b> Portfolio </span>
+    							</h1>
+    							<div class="label lui-subtitle"> I am a <strong>Creative Professional</strong>
+    							</div>
+    						</div>
+    						<div class="description">
+    							<div>
+    								<p>Based in the city, I have extensive experience in delivering high-quality professional services. I am dedicated to providing innovative solutions tailored to your needs.</p>
+    							</div>
+    							
+    						</div>
+    						<div class="bts">
+    							
+    							<a href="#skills-section" class="btn-lnk"> My Skills </a>
+    						</div>
+    					</div>
+    					<div class="slide scrolla-element-anim-1 scroll-animate" data-animate="active">
+    						<img decoding="async" src="assets/images/handsome-stylish-man-in-studio-2026-01-07-06-56-19-utc.JPG" alt="&lt;b&gt;Zoé&lt;/b&gt; Miller" >
+    						
+    						<div class="info-list">
+    							<ul>
+    								<li>
+    									<span class="num">12 <strong>+</strong>
+    									</span>
+    									<span class="value">Years of <strong>Experience</strong>
+    									</span>
+    								</li>
+    								<li>
+    									<span class="num">330</span>
+    									<span class="value">Completed <strong>Projects</strong>
+    									</span>
+    								</li>
+    							</ul>
+    						</div>
+    					</div>
+    				</div>
+            <div class="lui-bgtitle">
+              <span> Professional Services </span>
+            </div>
+          </div>
+
+        </div>
+			</section>
+
+      <!-- Section - Services -->
+			<section class="lui-section lui-gradient-bottom" id="services-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+  					<div class="m-titles align-center">
+  						<h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+  							<span> What I Do </span>
+  						</h2>
+  						<div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+  							<span> my <b>Services</b> </span>
+  						</div>
+  					</div>
+
+          </div>
+				</div>
+
+        <!-- Services -->
+				<div class="v-line v-line-right">
+          <div class="container">
+
+  					<div class="services-container scrolla-element-anim-1 scroll-animate" data-animate="active">
+  						<div class="row">
+  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  								<div class="services-item">
+  									<div class="lui-subtitle">
+  										<span> Web Development </span>
+  									</div>
+  									<h5 class="lui-title">
+  										<span> Web Design &amp; Logo </span>
+  									</h5>
+  									<div class="lui-text">
+  										<div> Web designers craft the overall vision &amp; plan for a website layout. Professional logo development: Business, Company, or Personal. </div>
+  									</div>
+  									<div class="service-dots"></div>
+  									<div class="service-link">
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  								<div class="services-item">
+  									<div class="lui-subtitle">
+  										<span> Apps Development </span>
+  									</div>
+  									<h5 class="lui-title">
+  										<span> iOS &amp; Android </span>
+  									</h5>
+  									<div class="lui-text">
+  										<div>
+  											<p>Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.</p>
+  										</div>
+  									</div>
+  									<div class="service-dots"></div>
+  									<div class="service-link">
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  								<div class="services-item">
+  									<div class="lui-subtitle">
+  										<span> Game Development </span>
+  									</div>
+  									<h5 class="lui-title">
+  										<span> Unity &amp; Unreal Engine </span>
+  									</h5>
+  									<div class="lui-text">
+  										<div> Creating games &amp; describes the design, development and release of a game. Developing unique mobile android and ios games. </div>
+  									</div>
+  									<div class="service-dots"></div>
+  									<div class="service-link">
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+  								<div class="services-item">
+  									<div class="lui-subtitle">
+  										<span> Advertising </span>
+  									</div>
+  									<h5 class="lui-title">
+  										<span> Google Ads </span>
+  									</h5>
+  									<div class="lui-text">
+  										<div> Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. </div>
+  									</div>
+  									<div class="service-dots"></div>
+  									<div class="service-link">
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	  								<div class="services-item">
+	  									<div class="lui-subtitle">
+	  										<span> Music Writing </span>
+	  									</div>
+	  									<h5 class="lui-title">
+	  										<span> Sound Track </span>
+	  									</h5>
+	  									<div class="lui-text">
+	  										<div>
+	  											<p>Music copying, writing, creating, transcription and composition services.</p>
+	  										</div>
+	  									</div>
+	  									<div class="service-dots"></div>
+	  									<div class="service-link">
+	  									</div>
+	  								</div>
+	  							</div>
+	  							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	  								<div class="services-item">
+	  									<div class="lui-subtitle">
+	  										<span> Financial Consulting </span>
+	  									</div>
+	  									<h5 class="lui-title">
+	  										<span> Investment Strategy </span>
+	  									</h5>
+	  									<div class="lui-text">
+	  										<div>
+	  											<p>Expert guidance on portfolio diversification, risk management, and long-term wealth creation strategies tailored to your financial goals.</p>
+	  										</div>
+	  									</div>
+	  									<div class="service-dots"></div>
+	  									<div class="service-link">
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+  					</div>
+
+							<div class="lui-bgtitle">
+								<span> Services </span>
+							</div>
+
+						</div>
+					</div>
+
+      </section>
+
+      <!-- Section - Skills -->
+			<section class="lui-section lui-gradient-center" id="skills-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Professional Skills </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Talent</b> </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Skills -->
+				<div class="v-line v-line-left">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                <div class="skills-items">
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> PHP </span>
+                    </h6>
+<div class="text">
+	                      <div>
+	                        <p>Proficient in developing robust and scalable solutions using industry-standard practices and modern frameworks.</p>
+	                      </div>
+	                    </div>
+	                    <div class="value">
+	                      <span class="num">85 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 85%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> Python </span>
+                    </h6>
+                    <div class="text">
+                      <div>
+                        <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                      </div>
+                    </div>
+	                    <div class="value">
+	                      <span class="num">75 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 75%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                <div class="skills-items">
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> JavaScript </span>
+                    </h6>
+                    <div class="text">
+                      <div>
+                        <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                      </div>
+                    </div>
+	                    <div class="value">
+	                      <span class="num">75 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 75%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> React </span>
+                    </h6>
+                    <div class="text">
+                      <div>
+                        <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                      </div>
+                    </div>
+	                    <div class="value">
+	                      <span class="num">70 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 70%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                <div class="skills-items">
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> WordPress </span>
+                    </h6>
+                    <div class="text">
+                      <div>
+                        <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                      </div>
+                    </div>
+	                    <div class="value">
+	                      <span class="num">90 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 90%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                  <div class="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name">
+                      <span> Adobe XD </span>
+                    </h6>
+                    <div class="text">
+                      <div>
+                        <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                      </div>
+                    </div>
+	                    <div class="value">
+	                      <span class="num">80 <span>%</span>
+	                      </span>
+	                    </div>
+	                    <div class="dots">
+	                      <div class="dot" style="width: 80%;">
+	                        <span></span>
+	                      </div>
+	                    </div>
+	                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Skills </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Works -->
+			<section class="lui-section lui-gradient-top" id="works-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Portfolio </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Cases</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Works -->
+				<div class="v-line v-line-right">
+          <div class="container">
+
+            <div class="works-box">
+
+              <div class="works-items works-masonry-items row">
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/asian-businessman-talking-on-phone-walking-in-city-2026-01-09-11-00-20-utc.jpg" alt="Zorro" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Branding, Photography </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">Wealth Management Dashboard</a>
+                      </h5>
+                      <div class="text">
+                        <p>A comprehensive wealth management platform designed for high-net-worth individuals to track global assets in real-time.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-ui-ux-design ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/bearded-south-asian-man-wearing-vest-laughing-whil-2026-01-08-05-35-34-utc.jpg" alt="Gooir" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Branding, UI UX Design </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">Fundsroom Mobile App</a>
+                      </h5>
+                      <div class="text">
+                        <p>An intuitive mobile application that simplifies mutual fund investments and SIP management for first-time investors.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/beautiful-businesswoman-with-clipboard-and-documen-2026-01-06-00-37-30-utc.jpg" alt="Explore" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Development, UI UX Design </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">Corporate Tax Solutions</a>
+                      </h5>
+                      <div class="text">
+                        <p>Streamlined tax planning and compliance architecture for mid-sized enterprises, optimizing financial efficiency.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/business-colleagues-standing-with-crossed-arms-2026-01-09-11-13-03-utc.jpg" alt="Mozar" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Branding, Photography </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">AI-Driven Portfolio Optimizer</a>
+                      </h5>
+                      <div class="text">
+                        <p>Leveraging machine learning to provide personalized investment recommendations based on risk appetite and market trends.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/business-concept-beautiful-young-businesswoman-lo-2026-01-11-09-07-36-utc.jpg" alt="Stay Fit" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Development, UI UX Design </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">Global Equity Platform</a>
+                      </h5>
+                      <div class="text">
+                        <p>A high-performance trading interface for international equity markets with advanced charting and real-time analytics.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-photo ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="javascript:void(0)">
+                          <img decoding="async" src="assets/images/businessman-hold-with-laptop-and-finger-point-up-2026-01-09-07-35-45-utc.jpg" alt="Kana" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Development, Photography </span>
+                      <h5 class="name">
+                        <a href="javascript:void(0)">Retirement Planning Portal</a>
+                      </h5>
+                      <div class="text">
+                        <p>A user-friendly portal helping individuals plan their retirement through interactive calculators and goal-based savings.</p>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+              </div>
+              <div class="load-more-link">
+                
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Portfolio </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Resume -->
+			<section class="lui-section lui-gradient-bottom" id="resume-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Resume </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Story</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- History -->
+				<div class="v-line v-line-left">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <h5 class="history-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <span> Education </span>
+                </h5>
+                <div class="history-items">
+                  <div class="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn active">
+                      <span> CoderHouse Courses </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> Backend Programming </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2014 - 2016 </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn">
+                      <span> Lviv National Academy of Arts </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> Faculty of Design </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2012 - 2014 </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn">
+                      <span> IT Future </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> High School </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2010 - 2012 </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <h5 class="history-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <span> Experience </span>
+                </h5>
+                <div class="history-items">
+                  <div class="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn active">
+                      <span> UI Head &amp; Manager </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> Soft Tech Inc. </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2020 - <b>Present</b>
+                        </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn">
+                      <span> UI / UX Specialist </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> Kana Design Studio </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2018 - 2020 </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <h6 class="name lui-collapse-btn">
+                      <span> Plugins Developer </span>
+                    </h6>
+                    <div class="history-content">
+                      <div class="subname">
+                        <span> Fiverr.com </span>
+                      </div>
+                      <div class="date lui-subtitle">
+                        <span> 2016 - 2018 </span>
+                      </div>
+                      <div class="text">
+                        <div>
+                          <p>The attention to detail and commitment to excellence exceeded all expectations. A truly professional experience from start to finish.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> History </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Testimonials -->
+			<section class="lui-section lui-gradient-center" id="testimonials-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Testimonials </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> what <b>Customers Say</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Testimonials -->
+				<div class="v-line v-line-right">
+          <div class="container">
+
+            <div class="testimonials-container scrolla-element-anim-1 scroll-animate" data-animate="active">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <div class="testimonials-item">
+                    <div class="image">
+                      <img decoding="async" src="assets/images/businesswoman-standing-with-clipboard-and-looking-2026-01-05-23-47-00-utc.jpg" alt="Barbara Wilson" >
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+                        </svg>
+                      </div>
+                    </div>
+<div class="text lui-text">
+	                      <div>
+	                        <p>Fundsroom transformed our approach to asset management. Their technical expertise and financial insight are unmatched.</p>
+	                      </div>
+	                    </div>
+	                    <div class="info">
+	                      <h6 class="name">
+	                        <span>Barbara Wilson</span>
+	                      </h6>
+                      <div class="author">
+                        <span>CEO Company</span>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <div class="testimonials-item">
+                    <div class="image">
+                      <img decoding="async" src="assets/images/confident-businessman-2026-01-07-07-02-30-utc.jpg" alt="Charlie Smith" >
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+                        </svg>
+                      </div>
+                    </div>
+<div class="text lui-text">
+	                      <div>
+	                        <p>A highly professional team that consistently delivers top-tier financial platforms. Their attention to detail is exceptional.</p>
+	                      </div>
+	                    </div>
+	                    <div class="info">
+	                      <h6 class="name">
+	                        <span>Charlie Smith</span>
+	                      </h6>
+                      <div class="author">
+                        <span>Designer</span>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <div class="testimonials-item">
+                    <div class="image">
+                      <img decoding="async" src="assets/images/confident-businesspeople-posing-in-black-formal-we-2026-01-06-00-29-15-utc.jpg" alt="Roy Wang" >
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+                        </svg>
+                      </div>
+                    </div>
+<div class="text lui-text">
+	                      <div>
+	                        <p>The UI/UX design for our trading platform exceeded all expectations. Our user engagement has increased by 40% since launch.</p>
+	                      </div>
+	                    </div>
+	                    <div class="info">
+	                      <h6 class="name">
+	                        <span>Roy Wang</span>
+	                      </h6>
+                      <div class="author">
+                        <span>Manager GYM</span>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <div class="testimonials-item">
+                    <div class="image">
+                      <img decoding="async" src="assets/images/confident-group-of-coworkers-standing-in-workplace-2026-01-09-07-14-53-utc.jpg" alt="Jennifer Smith" >
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+                        </svg>
+                      </div>
+                    </div>
+<div class="text lui-text">
+	                      <div>
+	                        <p>Exceptional service and deep industry knowledge. They truly understand the complexities of the financial sector.</p>
+	                      </div>
+	                    </div>
+	                    <div class="info">
+	                      <h6 class="name">
+	                        <span>Jennifer Smith</span>
+	                      </h6>
+                      <div class="author">
+                        <span>CEO &amp; Founder</span>
+                      </div>
+                    </div>
+                                      </div>
+                </div>
+	                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	                  <div class="testimonials-item">
+	                    <div class="image">
+	                      <img decoding="async" src="assets/images/ethnic-businesswoman-walking-along-street-near-bui-2026-01-09-08-28-30-utc.jpg" alt="Paul Freeman" >
+	                      <div class="icon">
+	                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+	                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+	                        </svg>
+	                      </div>
+	                    </div>
+	<div class="text lui-text">
+		                      <div>
+		                        <p>The portfolio optimization tools provided by Fundsroom have significantly improved my investment returns and risk management.</p>
+		                      </div>
+		                    </div>
+		                    <div class="info">
+		                      <h6 class="name">
+		                        <span>Paul Freeman</span>
+		                      </h6>
+	                      <div class="author">
+	                        <span>Photographer</span>
+	                      </div>
+	                    </div>
+	                                      </div>
+	                </div>
+		                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		                  <div class="testimonials-item">
+		                    <div class="image">
+		                      <img decoding="async" src="assets/images/testimonial-unique.jpg" alt="Marcus Thorne" >
+		                      <div class="icon">
+		                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="34px">
+		                          <path fill-rule="evenodd" stroke-width="2px" stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)" d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z" />
+		                        </svg>
+		                      </div>
+		                    </div>
+		<div class="text lui-text">
+			                      <div>
+			                        <p>The strategic insights provided by the team have been instrumental in our recent market expansion. Truly a world-class service.</p>
+			                      </div>
+			                    </div>
+			                    <div class="info">
+			                      <h6 class="name">
+			                        <span>Marcus Thorne</span>
+			                      </h6>
+			                      <div class="author">
+			                        <span>Director of Operations</span>
+			                      </div>
+			                    </div>
+			                                      </div>
+			                </div>
+
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Reviews </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Pricing -->
+			<section class="lui-section lui-gradient-center" id="pricing-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Pricing </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Price Board</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Pricing -->
+				<div class="v-line v-line-left">
+          <div class="container">
+
+            <div class="pricing-items row">
+              <div class="pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="pricing-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="lui-subtitle">
+                    <span> Hourley Basis </span>
+                  </div>
+                  <div class="icon"></div>
+                  <div class="price">
+                    <span> 39 <b>₹</b>
+                    </span>
+                    <em>Hour</em>
+                  </div>
+                  <div class="lui-text">
+                    <div>
+                      <p>We provide high-quality professional services tailored to meet your specific business needs and goals.magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div>
+                      <ul>
+                        <li>
+                          <i class="fas fa-check"></i>Brand Design
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Web Development
+                        </li>
+                        <li>
+                          <em>Advertising</em>
+                        </li>
+                        <li>
+                          <em>Photography</em>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Start Project Button Removed -->
+                                  </div>
+              </div>
+              <div class="pricing-col center col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="label">
+                  <span> Popular </span>
+                </div>
+                <div class="pricing-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="lui-subtitle">
+                    <span> Freelancing </span>
+                  </div>
+                  <div class="icon"></div>
+                  <div class="price">
+                    <span> 259 <b>₹</b>
+                    </span>
+                    <em>Week</em>
+                  </div>
+                  <div class="lui-text">
+                    <div>
+                      <p>We provide high-quality professional services tailored to meet your specific business needs and goals.magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div>
+                      <ul>
+                        <li>
+                          <i class="fas fa-check"></i>Brand Design
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Web Development
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Advertising
+                        </li>
+                        <li>
+                          <em>Photography</em>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Start Project Button Removed -->
+                                  </div>
+              </div>
+              <div class="pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="pricing-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="lui-subtitle">
+                    <span> Full Time </span>
+                  </div>
+                  <div class="icon"></div>
+                  <div class="price">
+                    <span> 1.249 <b>₹</b>
+                    </span>
+                    <em>Month</em>
+                  </div>
+                  <div class="lui-text">
+                    <div>
+                      <p>We provide high-quality professional services tailored to meet your specific business needs and goals.magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div>
+                      <ul>
+                        <li>
+                          <i class="fas fa-check"></i>Brand Design
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Web Development
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Advertising
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Photography
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Start Project Button Removed -->
+                                  </div>
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Pricing </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Blog -->
+			<section class="lui-section lui-gradient-top" id="blog-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Latest Blog </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Articles and Advice</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Archive -->
+				<div class="v-line v-line-right">
+          <div class="container">
+
+            <div class="blog-items row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="javascript:void(0)">
+                      <img decoding="async" src="assets/images/full-length-portrait-of-three-confident-businesspe-2026-01-06-00-30-23-utc.jpg" alt="The Main Thing For The Designer" >
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>October 31, 2022</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="javascript:void(0)">The Main Thing For The Designer</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Discover why empathy and user-centric thinking are the most critical tools in a designer's arsenal, far outweighing technical skills alone. </p>
+	                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="javascript:void(0)">
+                      <img decoding="async" src="assets/images/handsome-adult-businessman-with-paper-cup-of-coffe-2026-01-06-00-42-50-utc.jpg" alt="Follow Your Own Design Process" >
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>October 31, 2022</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="javascript:void(0)">Follow Your Own Design Process</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Learn how to break free from rigid industry standards and develop a unique workflow that enhances creativity and delivers better results. </p>
+	                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="javascript:void(0)">
+                      <img decoding="async" src="assets/images/happy-asian-man-portrait-and-tablet-mockup-in-adv-2026-01-09-09-17-03-utc.jpg" alt="Usability Secrets to Create Better Interfaces" >
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>November 28, 2021</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="javascript:void(0)">Usability Secrets to Create Better Interfaces</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Explore the hidden principles of intuitive design that guide users effortlessly through complex digital experiences without friction. </p>
+	                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="load-more">
+             
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Blog </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+      <!-- Section - Contacts -->
+			<section class="lui-section lui-gradient-bottom" id="contact-section">
+
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
+
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Contact Me </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Let’s <b>Talk About Ideas</b>
+                </span>
+              </div>
+            </div>
+
+          </div>
+				</div>
+
+        <!-- Contact -->
+				<div class="lui-contacts v-line v-line-left">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+
+                <div class="numbers-items">
+                  <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="icon">
+                      <i aria-hidden="true" class="far fa-map"></i>
+                    </div>
+                    <div class="title">
+                      <span> Address </span>
+                    </div>
+                    <div class="lui-text">
+                      <span> Nucleus Mall, FUNDSROOM HQ, 804, Sadhu Vaswani Rd, Camp Pune, Maharashtra 411001 </span>
+                    </div>
+                  </div>
+                  <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="icon">
+                      <i aria-hidden="true" class="far fa-user"></i>
+                    </div>
+                    <div class="title">
+                      <span> Working Hours </span>
+                    </div>
+                    <div class="lui-text">
+                      <span> Mon - Sat : 10:00 - 19:00 </span>
+                    </div>
+                  </div>
+                  <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="icon">
+                      <i aria-hidden="true" class="far fa-envelope"></i>
+                    </div>
+                    <div class="title">
+                      <span> Email </span>
+                    </div>
+                    <div class="lui-text">
+                      <span><a href="javascript:void(0)" style="cursor: pointer; text-decoration: none; color: inherit;">recruitment@fundsroom.com</a></span>
+                    </div>
+                  </div>
+                  <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="icon">
+                      <i aria-hidden="true" class="far fa-address-book"></i>
+                    </div>
+                    <div class="title">
+                      <span> Phone </span>
+                    </div>
+                    <div class="lui-text">
+                      <span> +91 8446874534 </span>
+                    </div>
+                  </div>
+                  <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="icon">
+                      <i aria-hidden="true" class="fas fa-globe"></i>
+                    </div>
+                    <div class="title">
+                      <span> Website </span>
+                    </div>
+                    <div class="lui-text">
+                      <span><a href="javascript:void(0)" style="cursor: pointer; text-decoration: none; color: inherit;">www.fundsroom.com</a></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
+                <div class="contacts-form scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="bg-img" style="background-image: url(assets/images/pat-1.png);"></div>
+                  <div class="contacts-form">
+                    <form id="contact_form" method="post">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <div class="group">
+                            <label>
+                              Your Full Name <b>*</b>
+                              <input type="text" name="name" id="name" required>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <div class="group">
+                            <label>
+                              Your Email Address <b>*</b>
+                              <input type="email" name="email" id="email" required>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="group">
+                            <label>
+                              <input type="text" name="phone" id="phone" placeholder="Your Phone Number" required>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="group">
+                            <label>
+                              Your Message <b>*</b>
+                              <textarea name="message" id="message" required></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
+                          <div class="terms-label">* Accept the terms and conditions.</div>
+                          <a href="#" class="btn" onclick="$('#contact_form').submit(); return false;">
+                            <span>Send Message</span>
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="alert-success" style="display: none;">
+                      <p>Thanks, your message is sent successfully.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="lui-bgtitle">
+              <span> Contact Me </span>
+            </div>
+
+					</div>
+				</div>
+
+      </section>
+
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="footer__builder">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="footer-logo align-center" style="margin-bottom: 10px;">
+                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+              </div>
+              <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+                © Powered by Fundsweb.in
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- cursor -->
+	<div class="cursor"></div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/splitting.js"></script>
+  <script src="assets/js/jarallax.min.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.js"></script>
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <script src="assets/js/jquery.scrolla.js"></script>
+  <script src="assets/js/skrollr.js"></script>
+  <script src="assets/js/jquery.cookie.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    (function () {
+      console.log("Binding contact form…");
+      const host = new URL(location.href).hostname;
+      sessionStorage.setItem("baseDomain", host);
+
+      function submitContactForm(e) {
+        e.preventDefault();
+        console.log("submitContactForm fired");
+
+        const data = {
+        domain: sessionStorage.getItem("baseDomain") || "",
+
+        //domain: "fundsmintindia.com",
+          Name: $("#name").val().trim(),
+          email: $("#email").val().trim(),
+          phone: $("#phone").val().trim(),
+          message: $("#message").val().trim()
+        };
+
+        console.log("Posting data:", data);
+
+        Swal.fire({
+          title: 'Sending...',
+          text: 'Please wait while we send your message.',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+
+        $.ajax({
+          url: "https://api.fundsweb.in/api/v1/contactus/add",
+          method: "POST",
+          contentType: "application/json",
+          data: JSON.stringify(data),
+          success() {
+            Swal.fire({
+              icon: 'success',
+              title: 'Message Sent!',
+              text: 'Your message has been sent successfully.',
+              confirmButtonColor: '#3085d6'
+            });
+            $("#contact_form")[0].reset();
+          },
+          error: function (xhr, status, err) {
+            console.error("Error submitting form:", err);
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'There was an error sending your message. Please try again later.',
+              confirmButtonColor: '#d33'
+            });
+          }
+        });
+      }
+
+      $(function () {
+        $("#contact_form").on("submit", submitContactForm);
+      });
+    })();
+  </script>
+  <script>
+    $(document).ready(function () {
+      if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+        console.log("Skipping GTAG — running on localhost");
+        return;
+      }
+      
+      function getCleanUrl() {
+        let protocol = "https:";
+        let hostname = window.location.hostname;
+        hostname = hostname.replace(/^www\./, '');
+        return `${protocol}//${hostname}`;
+      }
+
+      const cleanUrl = getCleanUrl();
+      console.log('Clean URL:', cleanUrl);
+
+      $.ajax({
+        url: 'https://api.fundsweb.in/api/v1/user/gtag-by-domain',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+          websiteUrl: cleanUrl
+        }),
+        success: function (response) {
+          console.log("gtag for client:", response);
+          const gcode = response.measurementId;
+
+          if (response.seoKeywords) {
+            $('meta[name="description"]').attr('content', response.seoKeywords);
+            console.log("Meta description updated with:", response.seoKeywords);
+          }
+
+          if (gcode) {
+            const gtagScript = document.createElement('script');
+            gtagScript.setAttribute('async', '');
+            gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${gcode}`;
+            document.head.appendChild(gtagScript);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', gcode);
+          }
+        },
+        error: function (err) {
+          console.error('Error fetching gtag code:', err);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

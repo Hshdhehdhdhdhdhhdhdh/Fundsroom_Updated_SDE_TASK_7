@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+  <title>Portfolio - Professional Services</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" >
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" >
+
+  <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+<script>
+$(document).ready(function () {
+function getCleanUrl() {
+let protocol = "https:";
+let hostname = window.location.hostname;
+hostname = hostname.replace(/^www\./, '');
+return `${protocol}//${hostname}`;
+}
+const cleanUrl = getCleanUrl();
+console.log('Clean URL:', cleanUrl);
+$.ajax({
+url: 'https://api.fundsweb.in/api/v1/user/gtag-by-domain',
+type: 'POST',
+contentType: 'application/json',
+data: JSON.stringify({
+websiteUrl: cleanUrl
+}),
+success: function (response) {
+console.log("gtag for client:", response);
+const gcode = response.measurementId;
+if (response.seoKeywords) {
+$('meta[name="description"]').attr('content',
+response.seoKeywords);
+console.log("Meta description updated with:",
+response.seoKeywords);
+}
+if (gcode) {
+const gtagScript =
+document.createElement('script');
+gtagScript.setAttribute('async', '');
+gtagScript.src =
+`https://www.googletagmanager.com/gtag/js?id=${gcode}`;
+document.head.appendChild(gtagScript);
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', gcode);
+}
+},
+error: function (err) {
+console.error('Error fetching gtag code:', err);
+}
+});
+});
+</script>
+
+</head>
+
+<body class="light-skin">
+	<div class="container-page">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner-logo">
+						<img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+						<div class="spinner-dot"></div>
+						<div class="spinner spinner-line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="header__builder">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+              </a>
+            </div>
+
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+								<!-- horizontal menu -->
+								<div class="header-menu-horizontal">
+										<ul class="header-nav">
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html#services-section">Service</a></li>
+											<li><a href="index.html#resume-section">About</a></li>
+											<li><a href="index.html#blog-section">Blog</a></li>
+											<li><a href="index.html#contact-section">Contact</a></li>
+										</ul>
+								</div>
+
+						<!-- Menu Full Overlay -->
+						<div class="menu-full-overlay">
+							<div class="menu-full-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+											<!-- menu full -->
+												<div class="menu-full">
+													<ul class="menu-full">
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html">Home</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#services-section">Service</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#resume-section">About</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="blog.html">Blog</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#contact-section">Contact</a>
+														</li>
+													</ul>
+												</div>
+
+											
+
+											<div class="v-line-block"><span></span></div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menu-overlay"></div>
+						</div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+      <!-- Section Started Heading -->
+      <section class="section section-inner started-heading">
+      	<div class="container">
+
+  				<!-- Heading -->
+					<div class="m-titles align-center">
+            <div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+              <a href="blog.html">Branding</a>, <a href="blog.html">UI Design</a> / October 31, 2022 / by admin
+            </div>
+<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+	              The Future of Digital Wealth Management
+	            </h1>
+					</div>
+
+      	</div>
+      </section>
+
+      <!-- Single Post Image -->
+      <div class="section section-inner m-image-large">
+        <div class="container">
+          <div class="v-line-right v-line-top"><div class="v-line-block"><span></span></div></div>
+        </div>
+        <div class="image">
+          <div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url(assets/images/full-length-portrait-of-three-confident-businesspe-2026-01-06-00-30-23-utc.jpg);"></div>
+        </div>
+      </div>
+
+      <!-- Section - Blog -->
+			<section class="section section-inner m-archive">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+              <!-- content -->
+              <div class="description">
+                <div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+<p>As we move further into 2026, the landscape of digital wealth management is undergoing a profound transformation. The integration of artificial intelligence and blockchain technology is not just a trend but a fundamental shift in how individuals manage their global assets. At Fundsroom, we are at the forefront of this evolution, providing tools that offer unprecedented transparency and personalized financial insights.</p>
+	                  <p>The key to success in this new era lies in the synergy between human expertise and algorithmic precision. While AI can process vast amounts of market data in milliseconds, the strategic vision of a professional advisor remains irreplaceable. This article explores how these technologies are being leveraged to create more resilient and high-performing investment portfolios for the modern investor.</p>
+<blockquote>
+	                    <p>Wealth is not about having a lot of money; it's about having a lot of options and the freedom to choose your own path.</p>
+	                    <p><cite>&#8211; Fundsroom Philosophy</cite></p>
+	                  </blockquote>
+                  <p><br></p>
+<h3>The Role of AI in Portfolio Optimization</h3>
+	                  <p>One of the most significant advancements is the use of machine learning for real-time portfolio optimization. By analyzing global market trends, geopolitical events, and individual risk profiles, these systems can suggest adjustments that maximize returns while minimizing exposure. This level of dynamic management was previously only available to institutional investors but is now accessible to everyone through the Fundsroom platform.</p>
+                  <ul class="gallery gallery-columns-2">
+                    <li class="gallery-item">
+                      <figure>
+                        <img src="assets/images/inspector-2026-01-07-07-10-02-utc.jpg" alt="" >
+                      </figure>
+                    </li>
+                    <li class="gallery-item">
+                      <figure>
+                        <img src="assets/images/people-active-lifestyle-2026-01-08-08-14-43-utc.jpg" alt="" >
+                      </figure>
+                    </li>
+                  </ul>
+                  <p>Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla et tristique orci. Pellentesque lectus sapien, maximus id gravida sit amet, tristique non eros. Etiam aliquet, sem vitae sagittis convallis, ante sapien tincidunt nisl, eget dapibus tortor velit quis ex. Proin et condimentum est, sed pretium ex. Mauris posuere est metus, vitae commodo sem posuere eget. Praesent maximus augue rutrum, consequat magna id, facilisis lorem. Quisque molestie, turpis ac interdum gravida</p>
+                  <ul>
+                    <li>Donec arcu lacus, ornare eget ligula vel, commodo luctus felis.</li>
+                    <li>Ut dignissim sapien sit amet molestie rutrum.</li>
+                    <li>Orci varius natoque penatibus et magnis dis parturient montes.</li>
+                    <li>Ut at nulla ut libero mollis viverra sed vitae purus.</li>
+                  </ul>
+                  <p>Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla et tristique orci. Pellentesque lectus sapien, maximus id gravida sit amet, tristique non eros. Etiam aliquet, sem vitae sagittis convallis, ante sapien tincidunt nisl, eget dapibus tortor velit quis ex.</p>
+
+                  <span class="tags-links">
+                    <span>Tags:</span>
+                    <a href="#">Design</a>
+                    <a href="#">HTML</a>
+                    <a href="#">UX</a>
+                    <a href="#">WordPress</a>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comments -->
+              <div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+                <div class="section__comments">
+
+                  <div class="m-titles">
+                    <div class="m-title align-left">2 Comments</div>
+                  </div>
+
+                  <ul class="comments">
+                    <li class="comment comment-item">
+                      <div class="comment comment-box">
+                        <img src="assets/images/picture-of-serious-businessman-standing-2026-01-08-05-12-02-utc.jpg" class="avatar" alt="" >
+                        <div class="comment-box__body">
+                          <div class="content-caption post-content description">
+                            <h5 class="comment-box__details">Robert Brown <span>December 9, 2021</span></h5>
+                            <p>Nam dui mauris, congue vel nisi in, tempus gravida enim. Nulla et tristique orci. Pellentesque lectus sapien, maximus id gravida sit amet, tristique non eros. Etiam aliquet, sem vitae sagittis convallis, ante sapien tincidunt nisl, eget dapibus tortor velit quis ex.</p>
+                          </div>
+                        </div>
+                        <div class="comment-footer">
+                          <a class="comment-reply-link" href="#">Reply</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="comment comment-item">
+                      <div class="comment comment-box">
+                        <img src="assets/images/picture-of-serious-businessman-standing-2026-01-08-05-12-02-utc.jpg" class="avatar" alt="" >
+                        <div class="comment-box__body">
+                          <div class="content-caption post-content description">
+                            <h5 class="comment-box__details">Ryan Berg <span>December 9, 2021</span></h5>
+                            <p>Proin et condimentum est, sed pretium ex. Mauris posuere est metus, vitae commodo sem posuere eget.</p>
+                          </div>
+                        </div>
+                        <div class="comment-footer">
+                          <a class="comment-reply-link" href="#">Reply</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="form-comment">
+                    <div class="comment-respond">
+                      <div class="m-titles">
+                        <div class="m-title align-left">Leave a comment</div>
+                      </div>
+                      <form method="post" class="comment-form">
+                        <div class="group-row">
+                          <div class="group">
+                            <textarea class="textarea" name="comment" rows="3" placeholder="Comment"></textarea>
+                          </div>
+                        </div>
+                        <div class="group-row">
+                          <div class="group">
+                            <input type="text" name="author" class="input" placeholder="Name" >
+                          </div>
+                          <div class="group">
+                            <input type="text" name="email" class="input" placeholder="Email" >
+                          </div>
+                        </div>
+                        <div class="group-row">
+                          <div class="group">
+                            <button type="submit" name="submit" class="btn">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+        </div>
+      </section>
+
+      <!-- Section Navigation -->
+      <div class="section section-inner m-page-navigation">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+      				<div class="h-titles h-navs">
+      					<a href="blog-single.html">
+      						<span class="nav-arrow splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+      							Next Article
+                  </span>
+      						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+      							Follow Your Own Design Process
+                  </span>
+      					</a>
+      				</div>
+
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="footer__builder">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="footer-logo align-center" style="margin-bottom: 10px;">
+                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+              </div>
+              <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+                © Powered by Fundsweb.in
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- cursor -->
+	<div class="cursor"></div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/splitting.js"></script>
+  <script src="assets/js/jarallax.min.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.js"></script>
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <script src="assets/js/jquery.scrolla.js"></script>
+  <script src="assets/js/skrollr.js"></script>
+  <script src="assets/js/jquery.cookie.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/common.js"></script>
+
+</body>
+</html>

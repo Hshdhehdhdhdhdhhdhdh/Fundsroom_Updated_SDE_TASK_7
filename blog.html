@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+  <title>Portfolio - Professional Services</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" >
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&#038;display=swap" type="text/css" media="all" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" >
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" >
+  <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" >
+
+  <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+<script>
+$(document).ready(function () {
+function getCleanUrl() {
+let protocol = "https:";
+let hostname = window.location.hostname;
+hostname = hostname.replace(/^www\./, '');
+return `${protocol}//${hostname}`;
+}
+const cleanUrl = getCleanUrl();
+console.log('Clean URL:', cleanUrl);
+$.ajax({
+url: 'https://api.fundsweb.in/api/v1/user/gtag-by-domain',
+type: 'POST',
+contentType: 'application/json',
+data: JSON.stringify({
+websiteUrl: cleanUrl
+}),
+success: function (response) {
+console.log("gtag for client:", response);
+const gcode = response.measurementId;
+if (response.seoKeywords) {
+$('meta[name="description"]').attr('content',
+response.seoKeywords);
+console.log("Meta description updated with:",
+response.seoKeywords);
+}
+if (gcode) {
+const gtagScript =
+document.createElement('script');
+gtagScript.setAttribute('async', '');
+gtagScript.src =
+`https://www.googletagmanager.com/gtag/js?id=${gcode}`;
+document.head.appendChild(gtagScript);
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', gcode);
+}
+},
+error: function (err) {
+console.error('Error fetching gtag code:', err);
+}
+});
+});
+</script>
+
+</head>
+
+<body class="light-skin">
+	<div class="container-page">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner-logo">
+						<img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+						<div class="spinner-dot"></div>
+						<div class="spinner spinner-line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="header__builder">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+              </a>
+            </div>
+
+          </div>
+	          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+									<!-- horizontal menu -->
+									<div class="header-menu-horizontal">
+											<ul class="header-nav">
+												<li><a href="index.html">Home</a></li>
+												<li><a href="index.html#services-section">Service</a></li>
+												<li><a href="index.html#resume-section">About</a></li>
+												<li><a href="index.html#blog-section">Blog</a></li>
+												<li><a href="index.html#contact-section">Contact</a></li>
+											</ul>
+									</div>
+
+						<!-- Menu Full Overlay -->
+						<div class="menu-full-overlay">
+							<div class="menu-full-container">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+											<!-- menu full -->
+												<div class="menu-full">
+													<ul class="menu-full">
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html">Home</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#services-section">Service</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#resume-section">About</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="blog.html">Blog</a>
+														</li>
+														<li class="menu-item">
+															<a class="splitting-text-anim-2" data-splitting="chars" href="index.html#contact-section">Contact</a>
+														</li>
+													</ul>
+												</div>
+
+											
+
+											<div class="v-line-block"><span></span></div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menu-overlay"></div>
+						</div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+      <!-- Section Started Heading -->
+      <section class="section section-inner started-heading">
+      	<div class="container">
+
+  				<!-- Heading -->
+          <div class="m-titles align-center">
+            <h1 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+              <span> Our Blogs </span>
+            </h1>
+            <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+              <span> Recent Articles </span>
+            </div>
+          </div>
+
+      	</div>
+      </section>
+
+      <!-- Section - Blog -->
+			<div class="section section-inner m-archive">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+
+              <!-- Blog Items -->
+              <div class="articles-container">
+
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="blog-single.html">
+                      <img src="assets/images/full-length-portrait-of-three-confident-businesspe-2026-01-06-00-30-23-utc.jpg" alt="The Main Thing For The Designer" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>October 31, 2022</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="blog-single.html">The Future of Digital Wealth Management</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Exploring how AI and blockchain are reshaping the landscape of personal finance and asset management in 2026. Learn about the next wave of fintech innovation&hellip; </p>
+                      <div class="readmore">
+                        <a href="blog-single.html" class="lnk">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="blog-single.html">
+                      <img src="assets/images/handsome-adult-businessman-with-paper-cup-of-coffe-2026-01-06-00-42-50-utc.jpg" alt="Follow Your Own Design Process" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>October 31, 2022</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="blog-single.html">5 Strategies for Sustainable Investing</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Learn how to align your financial goals with environmental and social impact through ESG-focused investment strategies. Discover the power of ethical wealth creation&hellip; </p>
+                      <div class="readmore">
+                        <a href="blog-single.html" class="lnk">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                  <div class="image">
+                    <a href="blog-single.html">
+                      <img src="assets/images/happy-asian-man-portrait-and-tablet-mockup-in-adv-2026-01-09-09-17-03-utc.jpg" alt="Usability Secrets to Create Better Interfaces" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="category lui-subtitle">
+                      <span>November 28, 2021</span>
+                    </div>
+<h5 class="lui-title">
+	                      <a href="blog-single.html">Navigating Market Volatility in 2026</a>
+	                    </h5>
+	                    <div class="lui-text">
+	                      <p>Expert advice on maintaining a resilient investment portfolio during periods of global economic uncertainty. Strategies for long-term financial stability&hellip; </p>
+                      <div class="readmore">
+                        <a href="blog-single.html" class="lnk">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="pager">
+                <span class="page-numbers current">1</span>
+                <a class="page-numbers" href="#">2</a>
+                <a class="next page-numbers" href="#">Next</a>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+
+              <!-- sidebar -->
+              <div class="col__sedebar scrolla-element-anim-1 scroll-animate" data-animate="active">
+                <div class="content-sidebar">
+                  <aside class="widget-area">
+
+                    <div class="widget widget_block widget_search">
+                      <form class="wp-block-search">
+                        <div class="wp-block-search__inside-wrapper">
+                          <input type="search" class="wp-block-search__input wp-block-search__input" value="">
+                          <button type="submit" class="wp-block-search__button wp-element-button">Search</button>
+                        </div>
+                      </form>
+                    </div>
+
+                    <section class="widget widget_block">
+                      <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                          <h2>Recent Posts</h2>
+                          <ul class="wp-block-latest-posts__list wp-block-latest-posts">
+                            <li><a class="wp-block-latest-posts__post-title" href="blog-single.html">The Main Thing For The Designer</a></li>
+                            <li><a class="wp-block-latest-posts__post-title" href="blog-single.html">Follow Your Own Design Process</a></li>
+                            <li><a class="wp-block-latest-posts__post-title" href="blog-single.html">Usability Secrets to Create Better Interfaces</a></li>
+                            <li><a class="wp-block-latest-posts__post-title" href="blog-single.html">Three Ways To Level Up Your Photography</a></li>
+                            <li><a class="wp-block-latest-posts__post-title" href="blog-single.html">10 Useful Tips to Improve Your Skills</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="widget widget_block">
+                      <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                          <h2>Recent Comments</h2>
+                          <ul class="wp-block-latest-comments">
+                            <li class="wp-block-latest-comments__comment">
+                              <span class="wp-block-latest-comments__comment-author">Ryan Berg</span> on <a class="wp-block-latest-comments__comment-link" href="blog-single.html">How to Become a Successful UI/UX Designer</a>
+                            </li>
+                            <li class="wp-block-latest-comments__comment">
+                              <span class="wp-block-latest-comments__comment-author">Robert Brown</span> on <a class="wp-block-latest-comments__comment-link" href="blog-single.html">How to Become a Successful UI/UX Designer</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="widget widget_block">
+                      <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                          <h2>Archives</h2>
+                          <ul class="wp-block-archives-list wp-block-archives">
+                            <li><a href="blog-single.html">October 2022</a></li>
+                            <li><a href="blog-single.html">November 2021</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="widget widget_block">
+                      <div class="is-layout-flow wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                          <h2>Categories</h2>
+                          <ul class="wp-block-categories-list wp-block-categories">
+                            <li class="cat-item cat-item-2"><a href="blog-single.html">Branding</a></li>
+                            <li class="cat-item cat-item-3"><a href="blog-single.html">Photography</a></li>
+                            <li class="cat-item cat-item-4"><a href="blog-single.html">UI Design</a></li>
+                            <li class="cat-item cat-item-5"><a href="blog-single.html">UX Design</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                  </aside>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="v-line-left v-line-top"><div class="v-line-block"><span></span></div></div>
+
+        </div>
+      </div>
+
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="footer__builder">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="footer-logo align-center" style="margin-bottom: 10px;">
+                <img src="assets/images/fundsweb_logo.png" alt="Logo" style="width: 200px; height: auto; max-height: 50px; object-fit: contain;">
+              </div>
+              <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+                © Powered by Fundsweb.in
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <div class="copyright-text align-right scrolla-element-anim-1 scroll-animate" data-animate="active">
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- cursor -->
+	<div class="cursor"></div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/splitting.js"></script>
+  <script src="assets/js/jarallax.min.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.js"></script>
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <script src="assets/js/jquery.scrolla.js"></script>
+  <script src="assets/js/skrollr.js"></script>
+  <script src="assets/js/jquery.cookie.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/common.js"></script>
+
+</body>
+</html>
